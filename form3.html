@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://kit.fontawesome.com/7d007aa777.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="header">
+     <h2>Registration Form</h2>
+  </div>
+  <form method="POST" class="formm" id="form" name="Regform"   onclick="return formValidator()">
+   
+    <div class="form-control">
+      <label>Username</label>
+      <input type="text" name="user_name" id="username" placeholder="Enter your fullname" minlength=       "3" maxlength="30" required/>
+      <i class="fas fa-check-circle" id="circle1" style="color:#009900;"></i>
+      <i class="fas fa-exclamation-circle" id="excmtn1" style="color:red;"></i>
+      <small id="small1"></small>
+    </div>
+    <div class="form-control">
+      <label>Email</label>
+      <input type="email" name="email_id" id="emaill" placeholder="Enter your email" required />
+      <i class="fas fa-check-circle" id="circle2" style="color:#009900;"></i>
+      <i class="fas fa-exclamation-circle" id="excmtn2" style="color:red;"></i>
+      <small id="small2"></small>
+    </div>
+    <div class="form-control">
+      <label>Phone Number</label>
+      <input type="tel" name="phoneno" id="phone" placeholder="Enter your mobile number" required/>
+      <i class="fas fa-check-circle" id="circle3" style="color:green;"></i>
+      <i class="fas fa-exclamation-circle" id="excmtn3" style="color:red;"></i>
+      <small id="small3"></small>
+    </div>
+    <div class="form-control">
+      <label>Password</label>
+      <input type="password" name="password" id="passwordd" minlength="6" maxlength="8" placeholder=                      "Enter password" required/>
+      <i class="fas fa-check-circle" id="circle4" style="color:green;"></i>
+      <i class="fas fa-exclamation-circle" id="excmtn4" style="color:red;"></i>
+      <small id="small4"></small>
+    </div>
+     <div class="form-control">
+      <label>Confirm Password</label>
+      <input type="password" name="cnfpassword" id="cpassword" placeholder="Re-enter password"                required/>
+      <i class="fas fa-check-circle" id="circle5" style="color:green;"></i>
+      <i class="fas fa-exclamation-circle" id="excmtn5" style="color:red;"></i>
+      <small id="small5"></small>
+    </div>
+    <input type="submit" value="submit" class="btn" name="submit" />
+  </form>
+</div>
+<script src="form3.js"></script>
+</body>
+</html>
